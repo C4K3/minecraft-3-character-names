@@ -31,3 +31,6 @@ do
 	done
 done
 
+grep "^[a-z]*$" available-now.txt > available-now-without-numbers.txt
+grep "^[a-z]*$" soon-available.txt > soon-available-without-numbers.txt
+
