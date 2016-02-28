@@ -52,7 +52,6 @@
           (println "Trying for names:" names)
           (recur (sets/union available avail) (nthrest remaining-names 100)))))))
 
-;(println (get-all))
 (defn send-at-time-request [name]
   "Send a Username -> UUID at time request, returns true if name was in use 37 days ago"
   (loop []
@@ -72,9 +71,6 @@
                 (println "Got an error (presumably Too Many Requests,) sleeping for 15 seconds")
                 (Thread/sleep 15000)
                 (recur))))))
-
-(println (get-all))
-(println "AFTER GET ALL")
 
 (defn check-all []
   "Check all names, returns two sets of available-now and soon-available"
