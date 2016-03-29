@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 CHARS="a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 _"
 # 37 days in the past, to see if it was available then
 PAST_TIME=$(expr $(date +%s) - 60 \* 60 \* 24 \* 37)
