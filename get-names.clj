@@ -1,3 +1,4 @@
+#!/usr/bin/env clj
 (require '[clojure.string :as str]
          '[clojure.set :as sets])
 (import java.net.URL)
